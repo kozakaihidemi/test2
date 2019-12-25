@@ -6,11 +6,77 @@
   <title>Bootstrap Test</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+    <style>
+      body {
+        padding-top: 100px
+      }
+      .topics p {
+        text-align: justify
+      }
+      a.btn-primary {
+        background-color: #8e44ad;
+        border-color: #8e44ad;
+      }
+    </style>
 </head>
+
 <body>
-  <h1>Bootstrap Test</h1>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1><img src="test/images/logo.png" alt="Bootstrap"></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pulldown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="pulldown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AboutUs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="container topics">
+        <div class="row">
+            <div class="col-lg-4 col-xs-12 mb-5">
+                <h2>見出し</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit, explicabo numquam magni ipsa, possimus temporibus similique impedit beatae quae laboriosam praesentium vitae aspernatur quasi. Minima libero commodi, harum rem a quisquam veritatis reiciendis iste? Repudiandae magni debitis dolore voluptatem expedita a molestias rerum.</p>
+                <a href="#" class="btn btn-primary mr-2">詳細</a>
+                <a href="#" class="btn btn-warning">公式</a>
+            </div>
+            <div class="col-lg-4 col-xs-12 mb-5">
+                <h2>見出し</h2>
+                <p>Voluptatibus, ut quia voluptate, cupiditate non velit eaque, asperiores magni laborum necessitatibus dolorem, doloremque! Ratione, iure at voluptas itaque quo. At dolorum, excepturi minima expedita incidunt neque nulla odio quasi deleniti repellat mollitia sint doloribus non quibusdam eum iste iure esse quidem cumque veniam, commodi. Facilis fugit eius, saepe quisquam!</p>
+                <a href="#" class="btn btn-primary mr-2">詳細</a>
+                <a href="#" class="btn btn-warning">公式</a>
+            </div>
+            <div class="col-lg-4 col-xs-12 mb-5">
+                <h2>見出し</h2>
+                <p>Aspernatur nihil incidunt et repudiandae ipsa ea porro nulla, atque magnam saepe ipsam ad provident quo placeat suscipit illo facere, dolor, quam voluptates. Fuga iusto nemo eum delectus quas cum porro officia quod in neque, aliquam quos officiis magni suscipit nostrum, ab molestias, natus voluptates ut perspiciatis ipsam totam dolorem.</p>
+                <a href="#" class="btn btn-primary mr-2">詳細</a>
+                <a href="#" class="btn btn-warning">公式</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
+
 </html>
